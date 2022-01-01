@@ -6,7 +6,7 @@ import 'dart:async' as _i4;
 
 import 'package:crypto_flutter/domain/entity/coin_meta.dart' as _i6;
 import 'package:crypto_flutter/domain/failures/coin_failure.dart' as _i5;
-import 'package:crypto_flutter/domain/repository/coin_repository.dart' as _i3;
+import 'package:crypto_flutter/domain/repository/i_coin_repository.dart' as _i3;
 import 'package:dartz/dartz.dart' as _i2;
 import 'package:mockito/mockito.dart' as _i1;
 
@@ -30,9 +30,8 @@ class MockICoinRepo extends _i1.Mock implements _i3.ICoinRepo {
   }
 
   @override
-  _i4.Future<_i2.Either<_i5.CoinFailure, List<_i6.CoinMeta>>>
-      getMetaCoinsList() => (super.noSuchMethod(
-              Invocation.method(#getMetaCoinsList, []),
+  _i4.Future<_i2.Either<_i5.CoinFailure, List<_i6.CoinMeta>>> getAllCoins() =>
+      (super.noSuchMethod(Invocation.method(#getAllCoins, []),
               returnValue:
                   Future<_i2.Either<_i5.CoinFailure, List<_i6.CoinMeta>>>.value(
                       _FakeEither_0<_i5.CoinFailure, List<_i6.CoinMeta>>()))

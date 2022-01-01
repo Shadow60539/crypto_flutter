@@ -4,5 +4,5 @@ import 'package:dartz/dartz.dart';
 
 abstract class ICoinRepo {
   // Get All Coins list
-  Future<Either<CoinFailure, List<CoinMeta>>> getMetaCoinsList();
+  Future<Either<CoinFailure, List<CoinMeta>>> getAllCoins();
 }
