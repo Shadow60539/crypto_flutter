@@ -7,12 +7,11 @@ import 'package:injectable/injectable.dart';
 
 @injectable
 @prod
-class getAllCoins
-    implements Usecase<CoinFailure, List<CoinMeta>, NoParams> {
+class GetAllCoins implements Usecase<CoinFailure, List<CoinMeta>, NoParams> {
   /// Usecase to fetch coins list
   ///
   /// Direct call to `ICoinRepo`
-  const getAllCoins(this.repository);
+  const GetAllCoins(this.repository);
 
   final ICoinRepo repository;
 

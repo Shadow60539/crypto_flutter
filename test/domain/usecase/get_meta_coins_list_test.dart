@@ -11,14 +11,14 @@ import 'get_meta_coins_list_test.mocks.dart';
 
 @GenerateMocks([ICoinRepo])
 void main() {
-  late getAllCoins usecase;
+  late GetAllCoins usecase;
   late MockICoinRepo coinRepo;
 
   const List<CoinMeta> tCoinsList = [];
 
   setUp(() {
     coinRepo = MockICoinRepo();
-    usecase = getAllCoins(coinRepo);
+    usecase = GetAllCoins(coinRepo);
   });
 
   test('should call [getAllCoins] on the repository', () async {
