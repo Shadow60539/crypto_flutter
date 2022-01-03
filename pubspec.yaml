@@ -35,8 +35,12 @@ dependencies:
     sdk: flutter
   flutter_bloc: ^7.1.0
   freezed: ^1.1.0
+  injectable_generator: ^1.4.1
   injectable: ^1.5.0
   mockito: ^5.0.17
+  google_fonts: ^2.2.0
+  cached_network_image: ^3.2.0
+  intl: ^0.17.0
 
 dev_dependencies:
   equatable: ^2.0.3
