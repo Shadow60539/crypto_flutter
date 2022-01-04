@@ -8,7 +8,14 @@
 
 Before we start, you can take a look at the app:
 
-![Output sample](images/demo.png)
+<table>
+  <tr>
+    <td valign="top"><img src="images/demo.gif"/></td>
+    <td valign="center"><img src="images/demo.png"/></td>
+  </tr>
+</table>
+
+
 
 
 
